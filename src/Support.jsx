@@ -6,12 +6,6 @@ export const Support = (props) => {
 
   const history = useHistory();
 
-  const getForm = () => {
-    return {
-      __html: `<iframe src="https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=donation%20for%20feasible-ui&targets-hint=&default-sum=&button-text=14&hint=&successURL=&quickpay=shop&account=4100116130750193" width="100%" height="222" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-    `};
-  }
-
   return (
     <div className='donation-page' style={{ maxWidth: '600px' }}>
       <div>
@@ -29,12 +23,8 @@ export const Support = (props) => {
       </div>
 
       <div>
-        <div dangerouslySetInnerHTML={getForm()}></div>
-      </div>
-
-      <div>
-        <span>
-          Alternaively, you can make donation on the following page:&nbsp;
+        <span style={{ fontSize: '16px' }}>
+          Donation page —&nbsp;
           <br />
           <a href='https://yoomoney.ru/to/4100116130750193' target='_blank' rel="noreferrer">https://yoomoney.ru/to/4100116130750193</a>
         </span>

@@ -12,7 +12,7 @@ export const Quickstart = (props) => {
 
       <div style={{ marginTop: '30px', borderTop: '1px dotted gray', paddingTop: '5px' }}>
         <span style={{ color: '#b7631a' }}>
-          If you are looking to <b>modify</b> the look and functionality — download the <a href='https://github.com/aliakseiherman/feasible-ui'>source code</a> and paste into your project.
+          If you are looking to <b>modify</b> the look and functionality — download the <a href='https://github.com/aliakseiherman/feasible-ui/tree/sources'>source code</a> and paste into your project.
         </span>
       </div>
 
