@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/feasible-ui/static/css/main.2b6a7d62.chunk.css",
-    "main.js": "/feasible-ui/static/js/main.dd381084.chunk.js",
-    "main.js.map": "/feasible-ui/static/js/main.dd381084.chunk.js.map",
+    "main.js": "/feasible-ui/static/js/main.1e891747.chunk.js",
+    "main.js.map": "/feasible-ui/static/js/main.1e891747.chunk.js.map",
     "runtime-main.js": "/feasible-ui/static/js/runtime-main.cd1708f3.js",
     "runtime-main.js.map": "/feasible-ui/static/js/runtime-main.cd1708f3.js.map",
     "static/js/2.715ec955.chunk.js": "/feasible-ui/static/js/2.715ec955.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.cd1708f3.js",
     "static/js/2.715ec955.chunk.js",
     "static/css/main.2b6a7d62.chunk.css",
-    "static/js/main.dd381084.chunk.js"
+    "static/js/main.1e891747.chunk.js"
   ]
 }
