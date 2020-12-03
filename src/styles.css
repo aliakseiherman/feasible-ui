@@ -1,0 +1,481 @@
+body {
+  margin                 : 0;
+  font-family            : 'Open Sans Regular';
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.switch-view-button,
+.section-header-features,
+.sample-description,
+.description,
+.nav {
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select   : none;
+  /* Firefox */
+  -ms-user-select    : none;
+  /* IE10+/Edge */
+  user-select        : none;
+  /* Standard */
+}
+
+.main-container {
+  display     : flex;
+  padding-left: 10px;
+}
+
+
+
+@media only screen and (max-width: 771px) {
+  .main-container {
+    flex-direction: column;
+    padding-left  : 0;
+  }
+
+  .right,
+  .left {
+    padding: 0 5px;
+    height : fit-content !important;
+  }
+
+  .koala {
+    width: 200px;
+  }
+
+  .koala-left-container {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 772px) {
+  .main-container {
+    flex-direction: row;
+    height        : 100vh;
+  }
+
+  .right,
+  .left {
+    padding   : 0 10px;
+    height    : 100vh;
+    overflow-y: auto;
+  }
+
+  .koala-right-container {
+    display: none;
+  }
+}
+
+.right {
+  display       : flex;
+  flex-direction: column;
+  flex          : 2;
+  min-width     : 300px;
+}
+
+.right,
+.left {}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+  width           : 3px;
+  border-radius   : 5px;
+  background-color: rgb(88, 87, 87);
+}
+
+.left {
+  display       : flex;
+  flex          : 1;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 60px;
+  color    : rgb(26, 43, 49);
+}
+
+.sub-heading {
+  margin-bottom: 15px;
+  font-size    : 20px;
+  font-family  : 'Open Sans Light';
+  font-weight  : 300;
+  color        : rgb(10, 37, 48);
+}
+
+.heading,
+.sub-heading {
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select   : none;
+  /* Firefox */
+  -ms-user-select    : none;
+  /* IE10+/Edge */
+  user-select        : none;
+  /* Standard */
+
+  word-wrap: break-word;
+}
+
+.description {
+  margin-top : 15px;
+  font-size  : 13px;
+  font-family: 'Open Sans Light';
+}
+
+.description>ul {
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-container {
+  align-items   : center;
+  display       : flex;
+  flex-direction: column;
+  flex-grow     : 1;
+  word-break    : break-word;
+  padding       : 5px;
+}
+
+.page-wrapper {
+  display       : flex;
+  flex-direction: column;
+}
+
+.page-wrapper>*:not(.button) {
+  font-family  : 'Open Sans Light';
+  display      : flex;
+  margin-bottom: 15px;
+  max-width    : 700px;
+}
+
+.page-heading {
+  font-size  : 2em;
+  align-items: center;
+  display    : flex;
+}
+
+.page-container a,
+.donation-page a,
+.quickstart a {
+  font-family: 'Open Sans Regular';
+  color      : dodgerblue;
+  font-weight: 500;
+}
+
+.page-container q {
+  background-color: rgb(128, 159, 173);
+  color           : white
+}
+
+.koala-thank-you {
+  width    : 100vw;
+  max-width: 400px;
+}
+
+.youtube-channel {
+  color    : rgb(68, 103, 122);
+  font-size: 12px;
+}
+
+.vertical-spacing {
+  flex-grow: 1;
+}
+
+.koala {
+  cursor: pointer;
+}
+
+.section {
+  display       : flex;
+  flex-direction: column;
+  margin-bottom : 20px;
+  width         : 100%;
+}
+
+.samples {
+  display       : flex;
+  flex-direction: row;
+  justify-items : stretch;
+}
+
+.sample {
+  display: flex;
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src        : url(./font/opensans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Source Code';
+  src        : url(./font/SourceCodePro-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src        : url(./font/opensans/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: 'White Rabbit';
+  src        : url(./font/WHITRABT.woff);
+}
+
+.section-header {
+  /* max-width      : 400px; */
+  justify-content: space-between;
+  align-items    : center;
+  display        : flex;
+  flex-direction : row;
+}
+
+.sample-heading {
+  display      : flex;
+  font-family  : 'White Rabbit';
+  margin-bottom: 5px;
+}
+
+.switch-view-container {
+  display: flex;
+  width  : 161px;
+}
+
+.switch-view {
+  margin-left     : 5px;
+  display         : flex;
+  flex-direction  : row;
+  border          : 1px solid black;
+  border-radius   : 5px;
+  background-color: rgb(227, 231, 235);
+  overflow        : hidden;
+}
+
+.switch-view-button {
+  padding  : 0 10px;
+  cursor   : pointer;
+  font-size: 13px;
+}
+
+.switch-view-button:hover {
+  color: rgb(77, 77, 77);
+}
+
+.switch-view-button:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.switch-view-button.disabled {
+  cursor          : auto;
+  color           : rgb(202, 202, 202);
+  background-color: rgb(235, 235, 235);
+}
+
+.section-header-features {
+  display   : flex;
+  flex-wrap : wrap;
+  flex      : 1 0 auto;
+  font-size : 12px;
+  margin-top: 5px;
+  color     : rgb(28 102 131);
+}
+
+.section-header-features>.title {
+  color: rgb(17 53 52);
+}
+
+.section-header-features>div:not(:last-child) {
+  margin-right: 15px;
+}
+
+.sample-description {
+  font-size    : 12px;
+  color        : darkcyan;
+  margin-bottom: 5px;
+}
+
+.section-header-container {
+  margin-bottom: 10px;
+}
+
+
+.toast.custom {
+  background-color: rgb(30, 51, 75);
+  cursor          : auto;
+  display         : flex;
+  flex-direction  : column;
+}
+
+.toast>.buttons {
+  display       : flex;
+  flex-direction: row;
+  margin-top    : 10px;
+  flex-wrap     : wrap;
+}
+
+.toast>.label {
+  color    : white;
+  font-size: 10px;
+}
+
+.toast>.attachments {
+  display       : flex;
+  flex-direction: row;
+  flex-wrap     : wrap;
+}
+
+.toast>.attachments>div {
+  color           : rgb(255, 255, 255);
+  padding         : 0 5px;
+  font-size       : 10px;
+  border          : 1px solid rgb(179, 179, 179);
+  background-color: rgb(145, 145, 145);
+  border-radius   : 5px;
+  cursor          : pointer;
+}
+
+.toast>.attachments>div:not(:last-child) {
+  margin-right: 3px;
+}
+
+.text-area.reply {
+  border-radius: 5px;
+  height       : 25px;
+  font-size    : 11px;
+}
+
+.nav {
+  display       : flex;
+  flex-direction: row;
+  flex-wrap     : wrap;
+}
+
+.nav>a {
+  border          : 1px solid rgb(214, 214, 214);
+  border-radius   : 5px;
+  padding         : 2px 10px;
+  background-color: rgb(207, 207, 207);
+  color           : rgb(6 35 47);
+  font-size       : 20px;
+  display         : flex;
+  align-items     : center;
+  cursor          : pointer;
+}
+
+.nav>a:not(:first-child) {
+  font-size: 13px;
+}
+
+.nav>a:hover {
+  border-color: rgb(236, 236, 236);
+  color       : rgb(0 88 125);
+}
+
+.nav>a:not(:last-child) {
+  margin-right: 5px;
+}
+
+.guide {
+  flex-wrap       : wrap;
+  display         : flex;
+  flex-direction  : column;
+  flex-grow       : 1;
+  background-color: rgb(223, 223, 223);
+  font-size       : 12px;
+  margin-bottom   : 5px;
+}
+
+.guide>div.paragraph {
+  padding   : 5px;
+  color     : rgb(6, 43, 58);
+  word-break: keep-all;
+}
+
+pre.prism-code {
+  font-size  : 13px;
+  font-family: 'Source Code';
+  width      : 100%;
+}
+
+.code-block {
+  overflow-x: scroll;
+}
+
+.code-block,
+pre.prism-code,
+.guide>div.paragraph,
+.guide {
+  max-width: 100%;
+  max-width: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  max-width: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+  max-width: fill-available;
+}
+
+.donation-page {
+  padding: 10px;
+}
+
+.donation-page>div {
+  margin-bottom: 10px;
+}
+
+.donation-page>div>span {
+  font-size: 13px;
+}
+
+.quickstart {
+  padding-top  : 20px;
+  font-size    : 13px;
+  margin-bottom: 30px;
+}
+
+.quickstart>.palette {
+  background-color: rgb(75, 75, 75);
+  color           : rgb(233, 233, 233);
+  font-size       : 12px;
+  font-family     : 'Source Code';
+  margin          : 10px 0;
+  width           : fit-content;
+  padding         : 3px 5px;
+}
+
+.quickstart>.install-manually {
+  margin-top: 20px;
+  color     : rgb(7, 43, 44);
+}
+
+.quickstart>.install-manually>div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.install-manually>div {
+  display       : flex;
+  flex-direction: row;
+}
+
+.install-manually>div>div {
+  display       : flex;
+  flex-wrap     : wrap;
+  flex-direction: row;
+}
+
+
+.install-manually>div>div>div {
+  margin-right: 5px;
+}
+
+.folder1 {
+  background-color: rgb(88, 117, 136);
+  color           : white;
+  padding         : 1px 10px;
+}
