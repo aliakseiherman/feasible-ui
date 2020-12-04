@@ -10,17 +10,20 @@ export const ButtonsCode = (props) => {
 ></Button>
 
 <Button
-  innerMarkup={(<span style={{ fontSize: '20px' }}><FontAwesomeIcon icon={faLinux} /></span>)}
-  onClick={() => {
-  }}
+  innerMarkup={(
+    <div className='icon-button-container'>
+      <span><FontAwesomeIcon icon={faLinux} /></span>
+    </div>
+  )}
+  onClick={() => { }}
   classes={['primary']}
 ></Button>
 
 <Button
   innerMarkup={(
-    <div style={{ fontSize: '20px', display: 'table' }}>
-      <FontAwesomeIcon icon={faFacebook} />
-      <span style={{ fontSize: '16px', display: 'table-cell', verticalAlign: 'middle', paddingLeft: '5px' }}>share</span>
+    <div className='icon-button-container'>
+      <span><FontAwesomeIcon icon={faFacebook} /></span>
+      <span>share</span>
     </div>)}
   onClick={() => { }}
   classes={['primary']}

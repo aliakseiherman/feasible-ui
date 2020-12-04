@@ -6,14 +6,18 @@ export const Quickstart = (props) => {
     <div className='quickstart'>
 
       <div className='palette'>
-        <div><span>npm install feasible-ui</span></div>
+        <div><span>npm i feasible-ui</span></div>
         <div><span>yarn add feasible-ui</span></div>
       </div>
 
       <div style={{ marginTop: '30px', borderTop: '1px dotted gray', paddingTop: '5px' }}>
         <span style={{ color: '#b7631a' }}>
-          If you are looking to <b>modify</b> the look and functionality — download the <a href='https://github.com/aliakseiherman/feasible-ui/tree/sources'>source code</a> and paste into your project.
+          If you are looking to <b>modify</b> the look and functionality — download the <b>source code</b> and paste into your project.
         </span>
+      </div>
+
+      <div className='palette'>
+        <div><span>git clone -b sources https://github.com/aliakseiherman/feasible-ui.git</span></div>
       </div>
 
       <div className='install-manually'>
@@ -27,7 +31,6 @@ export const Quickstart = (props) => {
             <div className='folder1'>/components</div>
             <div className='folder1'>/helpers</div>
             <div className='folder1'>/assets</div>
-            <div className='folder1'>/font</div>
           </div>
         </div>
         <div style={{ marginTop: '40px' }}>

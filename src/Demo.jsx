@@ -49,7 +49,7 @@ export const Demo = (props) => {
     history.push('/koala');
   }
 
-  const koala = require('./img/koala.png').default;
+  const koala = require('./img/koala.jpg').default;
 
   return (
 
@@ -67,11 +67,11 @@ export const Demo = (props) => {
           </div>
 
           <div className='sub-heading'>
-            <span>react-based ui toolkit</span>
+            <span>react-based ui component library</span>
           </div>
 
           <div className='nav'>
-            <a target='_blank' rel="noreferrer" href='https://github.com/aliakseiherman/feasible-ui'><FontAwesomeIcon icon={faGithub} /></a>
+            <a target='_blank' rel="noreferrer" href='https://github.com/aliakseiherman/feasible-ui/tree/sources'><FontAwesomeIcon icon={faGithub} /></a>
             <Link to="/demo">demo</Link>
             <Link to="/quick-start">quick start</Link>
             <a target='_blank' rel="noreferrer" href='https://github.com/aliakseiherman'>author</a>
@@ -80,13 +80,13 @@ export const Demo = (props) => {
 
           <div className='description'>
 
-            <span style={{ color: 'rgb(43 66 0)' }}>extremely lightweight</span>&nbsp;&nbsp;&nbsp;
-            <span style={{ color: 'rgb(0 44 66)' }}>simple and transparent implementation</span>&nbsp;&nbsp;&nbsp;
-            <span style={{ color: 'rgb(76 53 0)' }}>written from scratch</span>&nbsp;&nbsp;&nbsp;
-            <span style={{ color: 'rgb(0 76 70)' }}>not based on other ui libraries</span>&nbsp;&nbsp;&nbsp;
-            <span style={{ color: 'rgb(0 22 72)' }}>easy to tweak</span>&nbsp;&nbsp;&nbsp;
-            <span style={{ color: 'rgb(22 68 0)' }}>a starting point for a web app</span>&nbsp;&nbsp;&nbsp;
-            <span style={{ color: 'rgb(62 0 43)' }}>open-source</span>
+            <span style={{ color: 'rgb(33 169 25)' }}>extremely lightweight</span>&nbsp;&nbsp;&nbsp;
+            <span style={{ color: 'rgb(32 126 173)' }}>simple and transparent implementation</span>&nbsp;&nbsp;&nbsp;
+            <span style={{ color: 'rgb(140 108 33)' }}>written from scratch</span>&nbsp;&nbsp;&nbsp;
+            <span style={{ color: 'rgb(17 142 132)' }}>not based on other ui libraries</span>&nbsp;&nbsp;&nbsp;
+            <span style={{ color: 'rgb(33 65 136)' }}>easy to tweak</span>&nbsp;&nbsp;&nbsp;
+            <span style={{ color: 'rgb(156 79 33)' }}>a starting point for a web app</span>&nbsp;&nbsp;&nbsp;
+            <span style={{ color: 'rgb(105 22 79)' }}>open-source</span>
           </div>
 
           <div className='vertical-spacing'></div>
@@ -203,9 +203,9 @@ export const Demo = (props) => {
             </Route>
           </Switch>
 
-          <div className='section' onClick={handleKoalaClick}>
+          <div className='section'>
             <div className='koala-right-container'>
-              <img className='koala' width="250" src={koala}></img>
+              <img onClick={handleKoalaClick} className='koala' width="250" src={koala}></img>
             </div>
           </div>
 

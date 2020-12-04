@@ -1,8 +1,12 @@
 body {
   margin                 : 0;
-  font-family            : 'Open Sans Regular';
+  font-family            : sans-serif;
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+textarea {
+  font-size: 13px;
 }
 
 .switch-view-button,
@@ -102,7 +106,6 @@ body {
 .sub-heading {
   margin-bottom: 15px;
   font-size    : 20px;
-  font-family  : 'Open Sans Light';
   font-weight  : 300;
   color        : rgb(10, 37, 48);
 }
@@ -122,9 +125,8 @@ body {
 }
 
 .description {
-  margin-top : 15px;
-  font-size  : 13px;
-  font-family: 'Open Sans Light';
+  margin-top: 15px;
+  font-size : 14px;
 }
 
 .description>ul {
@@ -150,7 +152,6 @@ a {
 }
 
 .page-wrapper>*:not(.button) {
-  font-family  : 'Open Sans Light';
   display      : flex;
   margin-bottom: 15px;
   max-width    : 700px;
@@ -165,7 +166,6 @@ a {
 .page-container a,
 .donation-page a,
 .quickstart a {
-  font-family: 'Open Sans Regular';
   color      : dodgerblue;
   font-weight: 500;
 }
@@ -207,27 +207,8 @@ a {
 }
 
 .sample {
-  display: flex;
-}
-
-@font-face {
-  font-family: 'Open Sans Regular';
-  src        : url(./font/opensans/OpenSans-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'Source Code';
-  src        : url(./font/SourceCodePro-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'Open Sans Light';
-  src        : url(./font/opensans/OpenSans-Light.ttf);
-}
-
-@font-face {
-  font-family: 'White Rabbit';
-  src        : url(./font/WHITRABT.woff);
+  display  : flex;
+  flex-wrap: wrap;
 }
 
 .section-header {
@@ -239,14 +220,14 @@ a {
 }
 
 .sample-heading {
+  font-weight  : bold;
   display      : flex;
-  font-family  : 'White Rabbit';
   margin-bottom: 5px;
 }
 
 .switch-view-container {
   display: flex;
-  width  : 161px;
+  width  : 176px;
 }
 
 .switch-view {
@@ -260,9 +241,9 @@ a {
 }
 
 .switch-view-button {
-  padding  : 0 10px;
+  padding  : 2px 10px;
   cursor   : pointer;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .switch-view-button:hover {
@@ -283,7 +264,7 @@ a {
   display   : flex;
   flex-wrap : wrap;
   flex      : 1 0 auto;
-  font-size : 12px;
+  font-size : 14px;
   margin-top: 5px;
   color     : rgb(28 102 131);
 }
@@ -297,7 +278,7 @@ a {
 }
 
 .sample-description {
-  font-size    : 12px;
+  font-size    : 14px;
   color        : darkcyan;
   margin-bottom: 5px;
 }
@@ -323,7 +304,7 @@ a {
 
 .toast>.label {
   color    : white;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .toast>.attachments {
@@ -335,7 +316,7 @@ a {
 .toast>.attachments>div {
   color           : rgb(255, 255, 255);
   padding         : 0 5px;
-  font-size       : 10px;
+  font-size       : 12px;
   border          : 1px solid rgb(179, 179, 179);
   background-color: rgb(145, 145, 145);
   border-radius   : 5px;
@@ -349,7 +330,7 @@ a {
 .text-area.reply {
   border-radius: 5px;
   height       : 25px;
-  font-size    : 11px;
+  font-size    : 12px;
 }
 
 .nav {
@@ -389,7 +370,7 @@ a {
   flex-direction  : column;
   flex-grow       : 1;
   background-color: rgb(223, 223, 223);
-  font-size       : 12px;
+  font-size       : 14px;
   margin-bottom   : 5px;
 }
 
@@ -400,9 +381,8 @@ a {
 }
 
 pre.prism-code {
-  font-size  : 13px;
-  font-family: 'Source Code';
-  width      : 100%;
+  font-size: 13px;
+  width    : 100%;
 }
 
 .code-block {
@@ -430,23 +410,22 @@ pre.prism-code,
 }
 
 .donation-page>div>span {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .quickstart {
   padding-top  : 20px;
-  font-size    : 13px;
+  font-size    : 14px;
   margin-bottom: 30px;
 }
 
 .quickstart>.palette {
   background-color: rgb(75, 75, 75);
   color           : rgb(233, 233, 233);
-  font-size       : 12px;
-  font-family     : 'Source Code';
+  font-size       : 14px;
   margin          : 10px 0;
   width           : fit-content;
-  padding         : 3px 5px;
+  padding         : 5px 10px;
 }
 
 .quickstart>.install-manually {
@@ -478,4 +457,65 @@ pre.prism-code,
   background-color: rgb(88, 117, 136);
   color           : white;
   padding         : 1px 10px;
+}
+
+.sub-table-container {
+  display       : flex;
+  flex-direction: row;
+  padding       : 5px;
+  flex          : 1;
+}
+
+.sub-table-heading {
+  font-size: 13px;
+  color    : #202020;
+}
+
+.sub-table-row {
+  display        : flex;
+  justify-content: flex-start;
+  align-items    : center;
+  background     : #f0f0f0;
+}
+
+.sub-table-header-cell,
+.sub-table-row>.cell {
+  font-size: 13px;
+}
+
+.sub-table-row>.cell {
+  color: #696969;
+}
+
+.sub-table-header-row {
+  display        : flex;
+  justify-content: flex-start;
+  align-items    : center;
+  color          : rgb(255, 255, 255);
+}
+
+.sub-table-padding {
+  display: flex;
+  flex   : 0 0 15px;
+}
+
+.sub-table-rows-container {
+  display       : flex;
+  flex-direction: column;
+  flex          : 2;
+}
+
+.icon-button-container {
+  display: table;
+}
+
+.icon-button-container>span {
+  display       : table-cell;
+  vertical-align: middle;
+}
+
+.icon-button-container>span:first-child {}
+
+.pr5 {
+  padding-right: 5px;
 }

@@ -121,16 +121,16 @@ export const Koala = (props) => {
 
         <div style={{ display: 'block' }}>
           <div>
-            <span style={{ color: '#498694', fontFamily: 'Open Sans Regular', fontSize: '14px' }}>If you are an author of a popular package — </span>
-            <span style={{ color: 'rgb(156 96 20)', fontFamily: 'Open Sans Regular', fontSize: '14px' }}>you can help via publishing this information on your website so that more people learn about the catastrophe.</span>
+            <span style={{ color: '#498694' }}>If you are an author of a popular package — </span>
+            <span style={{ color: 'rgb(156 96 20)' }}>you can help via publishing this information on your website so that more people learn about the catastrophe.</span>
           </div>
           <div style={{ marginTop: '5px' }}>
-            <span style={{ color: 'rgb(156 96 20)', fontFamily: 'Open Sans Regular', fontSize: '14px' }}>Joint effort is GOLD.</span>
+            <span style={{ color: 'rgb(156 96 20)' }}>Joint effort is GOLD.</span>
           </div>
         </div>
 
         <div>
-          <span style={{ color: 'gray', fontFamily: 'Open Sans Regular', fontSize: '12px' }}>Thank you!</span>
+          <span style={{ color: 'gray' }}>Thank you!</span>
         </div>
 
         <Button label={'go back'} onClick={() => { history.push('/demo') }} classes={['primary']} />

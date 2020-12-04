@@ -22,9 +22,9 @@ export const Support = (props) => {
           </span>
       </div>
 
-      <div>
-        <span style={{ fontSize: '16px' }}>
-          Donation page —&nbsp;
+      <div style={{ padding: '10px', border: '1px dotted orange' }}>
+        <span style={{ fontSize: '16px', wordBreak: 'break-all' }}>
+          <b>Donation page —&nbsp;</b>
           <br />
           <a href='https://yoomoney.ru/to/4100116130750193' target='_blank' rel="noreferrer">https://yoomoney.ru/to/4100116130750193</a>
         </span>

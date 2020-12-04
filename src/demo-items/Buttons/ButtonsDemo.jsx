@@ -62,33 +62,49 @@ export const ButtonsDemo = (props) => {
         <div className='sample'>
 
           <Button
-            innerMarkup={(<span style={{ fontSize: '20px' }}><FontAwesomeIcon icon={faLinux} /></span>)}
+            innerMarkup={(
+              <div className='icon-button-container'>
+                <span><FontAwesomeIcon icon={faLinux} /></span>
+              </div>
+            )}
             onClick={() => { }}
             classes={['primary']}
           ></Button>
 
           <Button
-            innerMarkup={(<span style={{ fontSize: '20px' }}><FontAwesomeIcon icon={faGit} /></span>)}
+            innerMarkup={(
+              <div className='icon-button-container'>
+                <span><FontAwesomeIcon icon={faGit} /></span>
+              </div>
+            )}
             onClick={() => { }}
             classes={['secondary']}
           ></Button>
 
           <Button
-            innerMarkup={(<span style={{ fontSize: '20px' }}><FontAwesomeIcon icon={faReact} /></span>)}
+            innerMarkup={(
+              <div className='icon-button-container'>
+                <span><FontAwesomeIcon icon={faReact} /></span>
+              </div>
+            )}
             onClick={() => { }}
           ></Button>
 
           <Button
-            innerMarkup={(<span style={{ fontSize: '20px' }}><FontAwesomeIcon icon={faAddressCard} /></span>)}
+            innerMarkup={(
+              <div className='icon-button-container'>
+                <span><FontAwesomeIcon icon={faAddressCard} /></span>
+              </div>
+            )}
             onClick={() => { }}
             isDisabled={true}
           ></Button>
 
           <Button
             innerMarkup={(
-              <div style={{ fontSize: '20px', display: 'table' }}>
-                <FontAwesomeIcon icon={faFacebook} />
-                <span style={{ fontSize: '14px', display: 'table-cell', verticalAlign: 'middle', paddingLeft: '5px' }}>share</span>
+              <div className='icon-button-container'>
+                <span className='pr5'><FontAwesomeIcon icon={faFacebook} /></span>
+                <span>share</span>
               </div>)}
             onClick={() => { }}
             classes={['primary']}
