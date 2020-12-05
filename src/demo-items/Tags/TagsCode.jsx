@@ -16,6 +16,9 @@ export const TagsCode = (props) => {
 ></Tags>`
 
   return (
-    <PrismWrapper code={code} />
+    <div className='code-section'>
+      <div><a href='https://stackblitz.com/edit/feasible-ui-demo?file=src/demo-items/TagsDemo.jsx' target='_blank'>https://stackblitz.com/edit/feasible-ui-demo?file=src/demo-items/TagsDemo.jsx</a></div>
+      <PrismWrapper code={code} />
+    </div>
   )
 }

@@ -13,7 +13,9 @@ textarea {
 .section-header-features,
 .sample-description,
 .description,
-.nav {
+.nav,
+.live-demo-with-code,
+.code-section a {
   -webkit-user-select: none;
   /* Safari */
   -moz-user-select   : none;
@@ -171,8 +173,10 @@ a {
 }
 
 .page-container q {
-  background-color: rgb(128, 159, 173);
-  color           : white
+  padding         : 4px 6px;
+  line-height     : 25px;
+  background-color: rgb(52 69 76);
+  color           : white;
 }
 
 .koala-thank-you {
@@ -196,7 +200,7 @@ a {
 .section {
   display       : flex;
   flex-direction: column;
-  margin-bottom : 20px;
+  margin-bottom : 30px;
   width         : 100%;
 }
 
@@ -220,6 +224,7 @@ a {
 }
 
 .sample-heading {
+  color        : #06202b;
   font-weight  : bold;
   display      : flex;
   margin-bottom: 5px;
@@ -284,7 +289,7 @@ a {
 }
 
 .section-header-container {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 
@@ -392,7 +397,8 @@ pre.prism-code {
 .code-block,
 pre.prism-code,
 .guide>div.paragraph,
-.guide {
+.guide,
+.code-section {
   max-width: 100%;
   max-width: -moz-available;
   /* WebKit-based browsers will ignore this. */
@@ -518,4 +524,39 @@ pre.prism-code,
 
 .pr5 {
   padding-right: 5px;
+}
+
+.live-demo-with-code {
+  margin-top: 20px;
+}
+
+.live-demo-with-code span {
+  color: gray;
+}
+
+.live-demo-with-code a {
+  text-decoration: none;
+  color          : dodgerblue;
+  font-size      : 17px;
+}
+
+.code-section a {
+  text-decoration: none;
+  color          : dodgerblue;
+  font-size      : 14px;
+}
+
+.code-section {
+  display       : flex;
+  flex-direction: column;
+}
+
+
+.code-section {
+  width: 100%;
+  width: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
 }

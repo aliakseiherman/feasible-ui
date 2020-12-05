@@ -16,6 +16,9 @@ toastr.custom({
 }, 0);`
 
   return (
-    <PrismWrapper code={code} />
+    <div className='code-section'>
+      <div><a href='https://stackblitz.com/edit/feasible-ui-demo?file=src/demo-items/ToastrNotificationsDemo.jsx' target='_blank'>https://stackblitz.com/edit/feasible-ui-demo?file=src/demo-items/ToastrNotificationsDemo.jsx</a></div>
+      <PrismWrapper code={code} />
+    </div>
   )
 }

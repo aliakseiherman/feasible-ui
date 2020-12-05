@@ -89,6 +89,10 @@ export const Demo = (props) => {
             <span style={{ color: 'rgb(105 22 79)' }}>open-source</span>
           </div>
 
+          <div className='live-demo-with-code'>
+            <span>live demo with code: <a target='_blank' rel="noreferrer" href='https://stackblitz.com/edit/feasible-ui-demo'>https://stackblitz.com/edit/feasible-ui-demo</a></span>
+          </div>
+
           <div className='vertical-spacing'></div>
 
           <div className='koala-left-container'>

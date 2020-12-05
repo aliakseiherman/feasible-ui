@@ -30,6 +30,9 @@ export const ButtonsCode = (props) => {
 ></Button>`;
 
   return (
-    <PrismWrapper code={code} />
+    <div className='code-section'>
+      <div><a href='https://stackblitz.com/edit/feasible-ui-demo?file=src/demo-items/ButtonsDemo.jsx' target='_blank'>https://stackblitz.com/edit/feasible-ui-demo?file=src/demo-items/ButtonsDemo.jsx</a></div>
+      <PrismWrapper code={code} />
+    </div>
   )
 }

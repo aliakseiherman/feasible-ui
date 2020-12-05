@@ -8,10 +8,17 @@ export const TextAreaCode = (props) => {
   onChange={(value) => {
     setText(value);
   }}
+  isAutoFocus={false}
+  isSaveOnEnter={false}
+  isFullWidth={false}
+  classes={['your-custom-textarea-class']}
   parentContainerRef={parentContainerRef}
 ></TextArea>`
 
   return (
-    <PrismWrapper code={code} />
+    <div className='code-section'>
+      <div><a href='https://stackblitz.com/edit/feasible-ui-demo?file=src/demo-items/TextAreaDemo.jsx' target='_blank'>https://stackblitz.com/edit/feasible-ui-demo?file=src/demo-items/TextAreaDemo.jsx</a></div>
+      <PrismWrapper code={code} />
+    </div>
   )
 }

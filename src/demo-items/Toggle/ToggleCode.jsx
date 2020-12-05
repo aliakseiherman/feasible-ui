@@ -13,6 +13,9 @@ export const ToggleCode = (props) => {
 ></ToggleButton>`
 
   return (
-    <PrismWrapper code={code} />
+    <div className='code-section'>
+      <div><a href='https://stackblitz.com/edit/feasible-ui-demo?file=src/demo-items/ToggleDemo.jsx' target='_blank'>https://stackblitz.com/edit/feasible-ui-demo?file=src/demo-items/ToggleDemo.jsx</a></div>
+      <PrismWrapper code={code} />
+    </div>
   )
 }
