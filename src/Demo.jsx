@@ -71,7 +71,7 @@ export const Demo = (props) => {
           </div>
 
           <div className='nav'>
-            <a target='_blank' rel="noreferrer" href='https://github.com/aliakseiherman/feasible-ui/tree/sources'><FontAwesomeIcon icon={faGithub} /></a>
+            <a target='_blank' rel="noreferrer" href='https://github.com/aliakseiherman/feasible-ui-src'><FontAwesomeIcon icon={faGithub} /></a>
             <Link to="/demo">demo</Link>
             <Link to="/quick-start">quick start</Link>
             <a target='_blank' rel="noreferrer" href='https://github.com/aliakseiherman'>author</a>
@@ -82,11 +82,11 @@ export const Demo = (props) => {
 
             <span style={{ color: 'rgb(33 169 25)' }}>extremely lightweight</span>&nbsp;&nbsp;&nbsp;
             <span style={{ color: 'rgb(32 126 173)' }}>simple and transparent implementation</span>&nbsp;&nbsp;&nbsp;
-            <span style={{ color: 'rgb(140 108 33)' }}>written from scratch</span>&nbsp;&nbsp;&nbsp;
+            <span style={{ color: 'rgb(36 140 73)' }}>written from scratch</span>&nbsp;&nbsp;&nbsp;
             <span style={{ color: 'rgb(17 142 132)' }}>not based on other ui libraries</span>&nbsp;&nbsp;&nbsp;
-            <span style={{ color: 'rgb(33 65 136)' }}>easy to tweak</span>&nbsp;&nbsp;&nbsp;
-            <span style={{ color: 'rgb(156 79 33)' }}>a starting point for a web app</span>&nbsp;&nbsp;&nbsp;
-            <span style={{ color: 'rgb(105 22 79)' }}>open-source</span>
+            <span style={{ color: 'rgb(49 85 167)' }}>easy to tweak</span>&nbsp;&nbsp;&nbsp;
+            <span style={{ color: 'rgb(32 134 97)' }}>a starting point for a web app</span>&nbsp;&nbsp;&nbsp;
+            <span style={{ color: 'rgb(148 59 120)' }}>open-source</span>
           </div>
 
           <div className='live-demo-with-code'>

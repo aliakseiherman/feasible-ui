@@ -94,6 +94,22 @@ textarea {
   background-color: rgb(88, 87, 87);
 }
 
+.left::-webkit-scrollbar,
+.left::-webkit-scrollbar,
+.right::-webkit-scrollbar,
+.right::-webkit-scrollbar {
+  width: 6px;
+}
+
+.left::-webkit-scrollbar-thumb,
+.left::-webkit-scrollbar-thumb,
+.right::-webkit-scrollbar-thumb,
+.right::-webkit-scrollbar-thumb {
+  width           : 6px;
+  border-radius   : 8px;
+  background-color: rgb(88, 87, 87);
+}
+
 .left {
   display       : flex;
   flex          : 1;

@@ -17,7 +17,7 @@ export const Quickstart = (props) => {
       </div>
 
       <div className='palette'>
-        <div><span>git clone -b sources https://github.com/aliakseiherman/feasible-ui.git</span></div>
+        <div><span>git clone https://github.com/aliakseiherman/feasible-ui-src.git</span></div>
       </div>
 
       <div className='install-manually'>
