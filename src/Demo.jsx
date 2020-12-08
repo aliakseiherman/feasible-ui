@@ -105,7 +105,6 @@ export const Demo = (props) => {
         <div className='right'>
 
 
-
           <Switch>
             <Route path="/demo">
               <div>
