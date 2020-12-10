@@ -25,7 +25,7 @@ import { TagsCode } from './demo-items/Tags/TagsCode';
 import { TableDemo } from './demo-items/Table/TableDemo';
 import { TableCode } from './demo-items/Table/TableCode';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faReddit, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { ToggleGuide } from './demo-items/Toggle/ToggleGuide';
 import { ToastrNotificationsGuide } from './demo-items/ToastrNotifications/ToastrNotificationsGuide';
 import { TableGuide } from './demo-items/Table/TableGuide';
@@ -72,7 +72,6 @@ export const Demo = (props) => {
 
           <div className='nav'>
             <a target='_blank' rel="noreferrer" href='https://github.com/aliakseiherman/feasible-ui-src'><FontAwesomeIcon icon={faGithub} /></a>
-            <a target='_blank' rel="noreferrer" href='https://www.reddit.com/r/feasible_ui'><FontAwesomeIcon style={{ fontSize: '20px', color: '#88381b' }} icon={faReddit} /></a>
             <Link to="/demo">demo</Link>
             <Link to="/quick-start">quick start</Link>
             <a target='_blank' rel="noreferrer" href='https://github.com/aliakseiherman'>author</a>
