@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/feasible-ui/static/css/main.d69da30b.chunk.css",
-    "main.js": "/feasible-ui/static/js/main.16f4e67f.chunk.js",
-    "main.js.map": "/feasible-ui/static/js/main.16f4e67f.chunk.js.map",
+    "main.js": "/feasible-ui/static/js/main.71dc5c06.chunk.js",
+    "main.js.map": "/feasible-ui/static/js/main.71dc5c06.chunk.js.map",
     "runtime-main.js": "/feasible-ui/static/js/runtime-main.cd1708f3.js",
     "runtime-main.js.map": "/feasible-ui/static/js/runtime-main.cd1708f3.js.map",
-    "static/js/2.b755faea.chunk.js": "/feasible-ui/static/js/2.b755faea.chunk.js",
-    "static/js/2.b755faea.chunk.js.map": "/feasible-ui/static/js/2.b755faea.chunk.js.map",
+    "static/js/2.61fb1ac0.chunk.js": "/feasible-ui/static/js/2.61fb1ac0.chunk.js",
+    "static/js/2.61fb1ac0.chunk.js.map": "/feasible-ui/static/js/2.61fb1ac0.chunk.js.map",
     "index.html": "/feasible-ui/index.html",
     "static/css/main.d69da30b.chunk.css.map": "/feasible-ui/static/css/main.d69da30b.chunk.css.map",
-    "static/js/2.b755faea.chunk.js.LICENSE.txt": "/feasible-ui/static/js/2.b755faea.chunk.js.LICENSE.txt",
+    "static/js/2.61fb1ac0.chunk.js.LICENSE.txt": "/feasible-ui/static/js/2.61fb1ac0.chunk.js.LICENSE.txt",
     "static/media/koala.jpg": "/feasible-ui/static/media/koala.a9b3f7d9.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.cd1708f3.js",
-    "static/js/2.b755faea.chunk.js",
+    "static/js/2.61fb1ac0.chunk.js",
     "static/css/main.d69da30b.chunk.css",
-    "static/js/main.16f4e67f.chunk.js"
+    "static/js/main.71dc5c06.chunk.js"
   ]
 }
