@@ -5,7 +5,6 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserHistory } from 'history';
 import { HashRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Demo } from './Demo';
-import { Quickstart } from './Quickstart';
 
 const history = createBrowserHistory();
 

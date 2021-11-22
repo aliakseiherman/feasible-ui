@@ -28,9 +28,6 @@ export const Quickstart = (props) => {
             <div className='folder1'>/assets</div>
           </div>
         </div>
-        <div style={{ marginTop: '40px' }}>
-          <span style={{ color: 'rgb(26 81 183)' }}>Simple as that!</span>
-        </div>
       </div>
 
     </div>
