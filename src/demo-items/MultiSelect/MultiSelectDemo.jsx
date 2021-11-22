@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MultiSelect } from 'feasible-ui';
+import { MultiSelect } from '../../components/multi-select/MultiSelect';
 
 export const MultiSelectDemo = (props) => {
 

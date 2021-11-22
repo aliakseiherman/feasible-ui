@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button } from 'feasible-ui';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGit, faLinux, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faAddressCard } from '@fortawesome/free-regular-svg-icons';
+import { Button } from '../../components/button/Button';
 
 export const ButtonsDemo = (props) => {
 

@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { OBJECT_PROPERTY_ABOUT, OBJECT_PROPERTY_NAME, SORT_DIRECTION_ASCENDING } from 'feasible-ui';
 
 import { v4 as guid } from 'uuid';
-import { getSortByFn, paginate } from 'feasible-ui';
-
-import { TextAreaCell } from 'feasible-ui';
-
-import { Table } from 'feasible-ui';
 import { ModelsAvailableRow } from '../../components/table-customization/auxiliary-row/ModelsAvailableRow';
 import { TagsRow } from '../../components/table-customization/auxiliary-row/TagsRow';
+import { TextAreaCell } from '../../components/table/cell/TextAreaCell';
+import { OBJECT_PROPERTY_ABOUT, OBJECT_PROPERTY_NAME, SORT_DIRECTION_ASCENDING } from '../../components/table/constants';
+import { Table } from '../../components/table/Table';
+import { getSortByFn, paginate } from '../../helpers/array-helper';
 
 export const TableDemo = (props) => {
 
@@ -383,7 +381,7 @@ export const TableDemo = (props) => {
       </div>
 
       <div className='sample' style={{ width: '100%', marginBottom: '50px' }}>
-        <Table
+      <Table
           guid={tableGuid2}
           columns={[
             {

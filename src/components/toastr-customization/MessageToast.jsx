@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button } from 'feasible-ui';
+import { Button } from '../button/Button';
 
 export const MessageToast = (props) => {
 

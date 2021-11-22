@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import { Link, Route, Switch, useHistory } from 'react-router-dom';
 
 import './styles.css';
-import { Toastr, toastr } from 'feasible-ui';
 import { useEffect } from 'react';
 
 import { Section } from './components/demo/Section';
@@ -30,6 +29,8 @@ import { ToggleGuide } from './demo-items/Toggle/ToggleGuide';
 import { ToastrNotificationsGuide } from './demo-items/ToastrNotifications/ToastrNotificationsGuide';
 import { TableGuide } from './demo-items/Table/TableGuide';
 import { Quickstart } from './Quickstart';
+import { toastr } from './components/toastr/toastr-service';
+import { Toastr } from './components/toastr/Toastr';
 
 export const Demo = (props) => {
 
@@ -44,12 +45,6 @@ export const Demo = (props) => {
   }, []);
 
   const history = useHistory();
-
-  const handleKoalaClick = () => {
-    history.push('/koala');
-  }
-
-  const koala = require('./img/koala.jpg').default;
 
   return (
 
@@ -75,7 +70,6 @@ export const Demo = (props) => {
             <Link to="/demo">demo</Link>
             <Link to="/quick-start">quick start</Link>
             <a target='_blank' rel="noreferrer" href='https://github.com/aliakseiherman'>author</a>
-            <Link to="/support">support</Link>
           </div>
 
           <div className='description'>
@@ -91,12 +85,6 @@ export const Demo = (props) => {
 
           <div className='live-demo-with-code'>
             <span>live demo with code: <a target='_blank' rel="noreferrer" href='https://stackblitz.com/edit/feasible-ui-demo'>https://stackblitz.com/edit/feasible-ui-demo</a></span>
-          </div>
-
-          <div className='vertical-spacing'></div>
-
-          <div className='koala-left-container'>
-            <img onClick={handleKoalaClick} className='koala' width="250" src={koala}></img>
           </div>
 
         </div>
@@ -205,13 +193,6 @@ export const Demo = (props) => {
               <Quickstart />
             </Route>
           </Switch>
-
-          <div className='section'>
-            <div className='koala-right-container'>
-              <img onClick={handleKoalaClick} className='koala' width="250" src={koala}></img>
-            </div>
-          </div>
-
 
         </div>
 

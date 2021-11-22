@@ -1,5 +1,5 @@
 import React from 'react';
-import { getRowClass } from 'feasible-ui';
+import { getRowClass } from '../../table/helper';
 
 export const ModelsAvailableRow = (props) => {
 

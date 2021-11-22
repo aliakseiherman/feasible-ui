@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ToggleButton } from 'feasible-ui';
+import { ToggleButton } from '../../components/button/ToggleButton';
 
 export const ToggleDemo = (props) => {
 

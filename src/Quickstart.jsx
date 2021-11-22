@@ -5,14 +5,9 @@ export const Quickstart = (props) => {
   return (
     <div className='quickstart'>
 
-      <div className='palette'>
-        <div><span>npm i feasible-ui</span></div>
-        <div><span>yarn add feasible-ui</span></div>
-      </div>
-
-      <div style={{ marginTop: '30px', borderTop: '1px dotted gray', paddingTop: '5px' }}>
+      <div style={{ paddingTop: '5px' }}>
         <span style={{ color: '#b7631a' }}>
-          If you are looking to <b>modify</b> the look and functionality — download the <b>source code</b> and paste into your project.
+          Download the <b>source code</b> and paste into your project.
         </span>
       </div>
 

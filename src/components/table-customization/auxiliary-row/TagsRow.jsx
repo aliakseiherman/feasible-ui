@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-import { OBJECT_PROPERTY_ABOUT } from 'feasible-ui';
-import { Tags, getClassName } from 'feasible-ui';
+import { getClassName } from '../../../helpers/css-class-helper';
+import { OBJECT_PROPERTY_ABOUT } from '../../table/constants';
+import { Tags } from '../../tags/Tags';
 
 const Cell = (props) => {
 

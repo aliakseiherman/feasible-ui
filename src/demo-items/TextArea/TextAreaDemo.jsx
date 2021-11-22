@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextArea } from 'feasible-ui';
+import { TextArea } from '../../components/text-area/TextArea';
 
 export const TextAreaDemo = (props) => {
 

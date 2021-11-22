@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Tags } from 'feasible-ui';
+import { Tags } from '../../components/tags/Tags';
 
 export const TagsDemo = (props) => {
 

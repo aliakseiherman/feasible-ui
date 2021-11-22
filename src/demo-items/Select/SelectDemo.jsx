@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Select } from 'feasible-ui';
+import { Select } from '../../components/select/Select';
 
 export const SelectDemo = (props) => {
 

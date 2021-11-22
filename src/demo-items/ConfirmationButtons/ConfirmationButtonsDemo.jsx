@@ -1,5 +1,6 @@
 import React from 'react';
-import { ConfirmationButton, toastr } from 'feasible-ui';
+import { ConfirmationButton } from '../../components/button/confirmation-button/ConfirmationButton';
+import { toastr } from '../../components/toastr/toastr-service';
 
 export const ConfirmationButtonsDemo = (props) => {
 

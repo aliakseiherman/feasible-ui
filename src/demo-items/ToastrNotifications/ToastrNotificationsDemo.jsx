@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button, toastr } from 'feasible-ui';
+import { Button } from '../../components/button/Button';
 import { MessageToast } from '../../components/toastr-customization/MessageToast';
+import { toastr } from '../../components/toastr/toastr-service';
 
 export const ToastrNotificationsDemo = (props) => {
 
